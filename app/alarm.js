@@ -48,7 +48,6 @@ function isLunchtime (time){
 module.exports = {
   wakeup,
   snooze,
-  isLunchtime,
-  isNotLunchtime
-
-};
+  isLunchtime
+}
+}

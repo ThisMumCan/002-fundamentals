@@ -8,25 +8,40 @@ const peopleThatHaveUsedAlarm = [
 
 function wakeup(currentTime) {
   const currentHour = currentTime.getHours();
-
-  if (currentHour <= 11) {
-  return "Ugggggh its too early - I'm not waking up yet";
-  } else {
-  return "Get up!! You're wasting the day";
+  switch (currentHour().gethours()) {
+    case 0:
+      Hour = 6;
+      return "Ugggggh its too early - I'm not waking up yet";
+      break;
+    case 1:
+      Hour = 7;
+      return "Ugggggh its too early - I'm not waking up yet";
+      break;
+    case 2:
+       Hour = 8;
+       return "Ugggggh its too early - I'm not waking up yet";
+      break;
+    case 3:
+      Hour = 9;
+      return "Ugggggh its too early - I'm not waking up yet";
+      break;
+    case 4:
+      Hour = 10;
+      return "Ugggggh its too early - I'm not waking up yet";
+      break;
+    case 5: 
+      Hour =>11;
+      break;
+      return "Get up!! You're wasting the day";
   }
 }
 
 function snooze() {
-  let snoozeAttempts = 20;
+while (snooze <=20){
+  return snooze;
+}
+}
 
- // for (let i = 20; i < 20; i++) {
-   // snoozeAttempts++;
-  //}
-while (snoozeAttempts <20){
-  snoozeAttempts++
-  return snoozeAttempts;
-}
-}
 function isLunchtime (time){
   let hours=time.getHours();
 
@@ -44,10 +59,19 @@ function isNotLunchtime (time){
   return "No get back to work";
 }
 
+function alarmUsers (){
+peopleThatHaveUsedAlarm.forEach(function() {
+  return(names);
+});
+
+
+
 
 module.exports = {
   wakeup,
   snooze,
   isLunchtime,
-  isNotLunchtime
+  isNotLunchtime,
+  alarmUsers,
+}
 }

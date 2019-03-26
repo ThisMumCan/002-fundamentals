@@ -22,4 +22,7 @@ test ('Check it is not lunch', () =>{
   expect (alarm.isLunchtime (timeNow)).toBe ("No get back to work");
 });
 
+test ('Check who used alarm',() =>{
+  expect (alarm.alarmUsers.toBe ("James", "Susan", "Geoff", "Lisa"));
+});
 

@@ -7,12 +7,12 @@ test('Moans if too early', () => {
 });
 
 test('Snoozing for a set amount', () => {
-  expect(alarm.snooze()).toBe(10);
+  expect(alarm.snooze()).toBe();
 });
 
 test('Check is it lunch',() =>{
   let timeNow = new Date ();
-  timeNow.setHours(15);
+  timeNow.setHours(12);
   expect (alarm.isLunchtime (timeNow)).toBe ("Yesssss its lunch!!!");
 });
 
